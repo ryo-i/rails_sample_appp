@@ -8,7 +8,8 @@ class SessionsController < ApplicationController
       # ユーザーログイン後にユーザー情報のページにリダイレクトする
     else
       # エラーメッセージを作成する
-    render 'new', status: :unprocessable_entity
+      render 'new', status: :unprocessable_entity
+    end
   end
 
   def destroy
